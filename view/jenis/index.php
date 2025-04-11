@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,10 +17,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="../barang/index.php">barang</a>
+          <a class="nav-link active" aria-current="page" href="../barang/index.php">Jenis</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">jenis</a>
+          <a class="nav-link" href="">Barang</a>
         </li>
       </ul>
     </div>
@@ -27,7 +28,7 @@
 </nav>
 
 <div class="container"> 
-  <h1>Data Jenis Barang Rinjani</h1>
+  <h1><i class="fa-solid fa-user"></i>Data Jenis Barang Rinjani</h1>
   <a href="view_tambah.php" class="btn btn-primary">Tambah Data Jenis Barang Baru</a>
 <table class="table">
   <thead>
@@ -50,11 +51,10 @@
                             <td><?php echo $no; ?></td>
                     
                             <td><?php echo $result['nama_jenis']; ?></td>
-                            
-
                             <td>
-                            <a href="view_edit.php?id=<?php echo $result['id_jenis'] ?>" class="btn btn-warning">Edit</a>
-                            <a href="hapus.php?id=<?php echo $result['id_jenis'] ?>" 
+                            <a class="btn btn-warning" href="view_edit.php?id_jenis=<?php echo $result['id_jenis']?>">
+                            <i class="fa-sold fa-pen-to-square"></i>Edit</a>
+                            <a href="proses_hapus.php?id=<?php echo $result['id_jenis']; ?>"
                             onclick="return confirm('Kamu Yakin???')" 
                             class="btn btn-danger">Hapus</a>
                             </td>

@@ -16,10 +16,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">jenis</a>
+          <a class="nav-link active" aria-current="page" href="#">Barang</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../barang/index.php">barang</a>
+          <a class="nav-link" href="../barang/index.php">Jenis</a>
         </li>
       </ul>
     </div>
@@ -40,11 +40,11 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">ID Jenis</label>
-    <input type="int" class="form-control" name="id_jenis" id="exampleInputPassword1">
+    <input type="varchar" class="form-control" name="id_jenis" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Harga</label>
-    <input type="int" class="form-control" name="harga" id="exampleInputPassword1">
+    <input type="varchar" class="form-control" name="harga" id="exampleInputPassword1">
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Stok</label>
